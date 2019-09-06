@@ -62,46 +62,25 @@ nav {
 	margin-right: 25px;
 }
 
-/*hide the inputs/checkmarks*/
-input {
-  display: none;
-}
-
-/*hide the submenu*/
-ul.submenu {
-  max-height: 0;
-  overflow: hidden;
-}
-
-/*position the label*/
-label {
-  position: relative;
-  display: block;
-  cursor: pointer;
-}
-
-/*show the submenu when checked*/
-input:checked~ul.submenu {
-  max-height: 300px;
-}
-
 .dropdown {
 	display: none;
 	margin-right: 25px;
-	font-size: 18px;
-	padding: 10px;
 	color: #4A4683;
+}
+
+.dropdown img {
+	width: 25px;
 }
 
 .dropdown-content {
 	display: none;
 	position: absolute;
-	top: 30px;
 	right: 25px;
 	font-size: 12px;
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 	min-width: 120px;
-	box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.2);
+	border: 1px solid #4a4683;
+	/* box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.2); */
 	z-index: 1;
 }
 
@@ -113,6 +92,7 @@ input:checked~ul.submenu {
 	cursor: pointer;
 	color: #FFFFFF;
 	background-color: #e27277;
+	transition: .3s;
 }
 
 .dropdown:hover .dropdown-content {
