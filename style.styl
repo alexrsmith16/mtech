@@ -1,0 +1,40 @@
+html, body 
+    margin: 0
+    height: 100%
+    font: 12px monospace
+    color: #DEDEDE
+
+
+#landingContainer 
+    display: flex
+    height: 100%
+
+
+.menu-item 
+    width: 25%
+    height: 100%
+    transition: .3s
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    font-size: 24px
+    &:hover
+        width: 85%
+    &:nth-child(1) 
+        background-color: #8a2525
+    &:nth-child(2) 
+        background-color: #226b43
+    &:nth-child(3) 
+        background-color: #23237e
+    &:nth-child(4) 
+        background-color: #572c57
+    > div, > i
+        margin: 10px 0
+
+i.far, i.fas 
+    font-size: 75px
+
+ul
+    list-style: none
+    padding-left: 0
